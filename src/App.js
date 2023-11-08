@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { PieChart, Pie } from "recharts";
+import LanguageBreakdown from "./components/LanguageBreakdown";
 
 function App() {
   const [data, setData] = useState([]);
@@ -73,7 +74,7 @@ function App() {
             </tr>
           ))}
       </table> */}
-      <PieChart width={730} height={250}>
+      {/* <PieChart width={730} height={250}>
         <Pie
           data={[
             { name: "Java", value: javaPercent },
@@ -105,7 +106,8 @@ function App() {
           label
           labelLine
         />
-      </PieChart>
+      </PieChart> */}
+      <LanguageBreakdown />
     </div>
   );
 }
